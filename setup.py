@@ -5,6 +5,7 @@ import sys
 from distutils.util import convert_path
 from fnmatch import fnmatchcase
 from setuptools import setup, find_packages
+from os import path
 
 
 def read(fname):
@@ -102,11 +103,15 @@ AUTHOR_EMAIL = "rafameireles2011@gmail.com"
 URL = "https://github.com/rafael-hsm/libpythonpro"
 VERSION = __import__(PACKAGE).__version__
 
+this_directory = path.abspath(path.dirname(__file__))
+with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
+
 setup(
     name=NAME,
     version=VERSION,
     description=DESCRIPTION,
-    long_description=read('README.md'),
+    long_description=long_description,
     long_description_content_type='text/markdown',
     author=AUTHOR,
     author_email=AUTHOR_EMAIL,
