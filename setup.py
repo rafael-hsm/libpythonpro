@@ -94,8 +94,8 @@ def find_package_data(
     return out
 
 
-PACKAGE = "libpythonpro-rafa"
-NAME = "libpythonpro-rafa"
+PACKAGE = "libpythonpro"
+NAME = "libpythonpro_rafa"
 DESCRIPTION = "Módulo para exemplificar construção de projetos Python no curso PyTools"
 AUTHOR = "Rafael Meireles"
 AUTHOR_EMAIL = "rafameireles2011@gmail.com"
@@ -121,7 +121,7 @@ setup(
         "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.9",
         "Framework :: Pytest",
     ],
     install_requires=[
