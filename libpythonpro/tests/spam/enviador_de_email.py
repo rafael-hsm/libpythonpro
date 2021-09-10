@@ -1,3 +1,9 @@
 class Enviador:
     def enviar(self, remetente, destinatario, assunto, corpo):
-        return 'rafameireles2011@gmail.com'
+        if '@' not in remetente:
+            raise EmailInvalido(f'Email de remetente inválido: {remetente}')
+        return remetente
+
+
+class EmailInvalido(Exception):
+    pass
