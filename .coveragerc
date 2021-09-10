@@ -1,0 +1,6 @@
+# .coveragerc to control converage.py
+[run]
+branch = True
+omit =
+    */.venv/*
+    manage.py
