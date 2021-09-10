@@ -11,4 +11,8 @@ attrs>=21.2.0
 pluggy>=1.0.0
 pytest>=6.2.5
 
+# Coverage
+coverage==5.5
+pytest-cov==2.12.1
+
 -r requirements.txt
