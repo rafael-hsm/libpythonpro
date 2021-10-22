@@ -14,3 +14,22 @@ Tópicos a serem abordados:
 1. Git
 2. Virtualenv
 3. Pip
+
+# Instalação e Utilização
+
+Instale via pip:
+`pip install libpythonpro_rafa`
+
+
+Para utilizar importe a biblioteca dessa forma:
+`from libpythonpro.github_api import buscar_avatar`
+
+Exemplo:
+```
+from libpythonpro.github_api import buscar_avatar
+
+avatar = input('Digite o nome do Usuário: ')
+resp = buscar_avatar(avatar)
+print(resp)
+```
+O print retornará o link do avatar desejado.
