@@ -1,5 +1,5 @@
-# libpythonpro
-Módulo para exemplificar a construção de projetos Python no curso PyTools
+# Lib Python Pro
+## Módulo para exemplificar a construção de projetos Python no curso PyTools
 
 Nesse curso é ensinado como contribuir com projetos de código aberto.
 
@@ -22,6 +22,7 @@ Instale via pip:
 
 
 Para utilizar importe a biblioteca dessa forma:
+
 `from libpythonpro.github_api import buscar_avatar`
 
 Exemplo:
@@ -31,5 +32,9 @@ from libpythonpro.github_api import buscar_avatar
 avatar = input('Digite o nome do Usuário: ')
 resp = buscar_avatar(avatar)
 print(resp)
+
+EX:
+
+
 ```
 O print retornará o link do avatar desejado.
