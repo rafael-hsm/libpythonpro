@@ -33,8 +33,8 @@ avatar = input('Digite o nome do Usuário: ')
 resp = buscar_avatar(avatar)
 print(resp)
 
-EX:
-
+Digite o nome do usuário: rafael-hsm
+https://avatars.githubusercontent.com/u/82055965?v=4
 
 ```
 O print retornará o link do avatar desejado.

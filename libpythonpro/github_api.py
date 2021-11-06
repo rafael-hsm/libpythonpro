@@ -13,5 +13,5 @@ def buscar_avatar(usuario):
     return resp.json()['avatar_url']
 
 
-user = input('Digite o username do usuário: ')
+user = input('Digite o nome do usuário: ')
 print(buscar_avatar(user))
