@@ -1,5 +1,5 @@
-# libpythonpro
-Módulo para exemplificar a construção de projetos Python no curso PyTools
+# Lib Python Pro
+## Módulo para exemplificar a construção de projetos Python no curso PyTools
 
 Nesse curso é ensinado como contribuir com projetos de código aberto.
 
@@ -14,3 +14,27 @@ Tópicos a serem abordados:
 1. Git
 2. Virtualenv
 3. Pip
+
+# Instalação e Utilização
+
+Instale via pip:
+`pip install libpythonpro_rafa`
+
+
+Para utilizar importe a biblioteca dessa forma:
+
+`from libpythonpro.github_api import buscar_avatar`
+
+Exemplo:
+```
+from libpythonpro.github_api import buscar_avatar
+
+avatar = input('Digite o nome do Usuário: ')
+resp = buscar_avatar(avatar)
+print(resp)
+
+Digite o nome do usuário: rafael-hsm
+https://avatars.githubusercontent.com/u/82055965?v=4
+
+```
+O print retornará o link do avatar desejado.

@@ -11,3 +11,7 @@ def buscar_avatar(usuario):
     url = f'https://api.github.com/users/{usuario}'
     resp = requests.get(url)
     return resp.json()['avatar_url']
+
+
+user = input('Digite o nome do usuário: ')
+print(buscar_avatar(user))
